@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <fieldset>
    <legend>Profile Picture</legend>
     <form onsubmit="return validateProfile()">
         User Id: <input type="text" id="userId" name="userId" value="" onblur="validateProfile()" />
-        Profile Picture: <input type="file" id="picture" name="picture" onblur="validateProfile()" />
+        Profile Picture: <input type="file" id="picture" name="picture" onblur="validateProfile()" /><br>
         <input type="submit" value="Submit" />
     </form>
+</fieldset>
     <p id="error"></p>
 
     <script>
